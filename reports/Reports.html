@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 18, 2026 07:19:25 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 18, 2026 07:58:10 PM</span></a>
 </li>
 </ul>
 </div>
@@ -80,14 +80,66 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">checkDimensionOfAllSection</p>
             <p class="text-sm">
-              <span>7:19:29 PM</span> / <span>00:00:01:357</span>
+              <span>7:58:13 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkDimensionOfAllSection</h5>
+<span class='badge badge-success'>08.18.2026 7:58:13 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:13 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkDimensionOfAllSection</p>
+            <p class="text-sm">
+              <span>7:58:18 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkDimensionOfAllSection</h5>
+<span class='badge badge-success'>08.18.2026 7:58:18 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:18 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">checkDimensionOfAllSection</p>
+            <p class="text-sm">
+              <span>7:58:24 PM</span> / <span>00:00:03:566</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -96,10 +148,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">checkDimensionOfAllSection</h5>
-<span class='badge badge-success'>08.18.2026 7:19:29 PM</span>
-<span class='badge badge-danger'>08.18.2026 7:19:30 PM</span>
-<span class='badge badge-default'>00:00:01:357</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>08.18.2026 7:58:24 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:28 PM</span>
+<span class='badge badge-default'>00:00:03:566</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -114,16 +166,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:19:30 PM</td>
+        <td>7:58:27 PM</td>
         <td>
           checkDimensionOfAllSection
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:19:30 PM</td>
+        <td>7:58:27 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [900] but found [621]
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [900] but found [609]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -136,8 +188,8 @@
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -171,14 +223,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">seeAllSeeLessSwitchTest</p>
             <p class="text-sm">
-              <span>7:19:34 PM</span> / <span>00:00:01:217</span>
+              <span>7:58:31 PM</span> / <span>00:00:03:669</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -187,89 +239,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">seeAllSeeLessSwitchTest</h5>
-<span class='badge badge-success'>08.18.2026 7:19:34 PM</span>
-<span class='badge badge-danger'>08.18.2026 7:19:35 PM</span>
-<span class='badge badge-default'>00:00:01:217</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:19:35 PM</td>
-        <td>
-          seeAllSeeLessSwitchTest
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyAllSectionHeaders</p>
-            <p class="text-sm">
-              <span>7:19:40 PM</span> / <span>00:00:01:338</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyAllSectionHeaders</h5>
-<span class='badge badge-success'>08.18.2026 7:19:40 PM</span>
-<span class='badge badge-danger'>08.18.2026 7:19:41 PM</span>
-<span class='badge badge-default'>00:00:01:338</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:19:41 PM</td>
-        <td>
-          verifyAllSectionHeaders
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyNavButtonOfDigital</p>
-            <p class="text-sm">
-              <span>7:19:44 PM</span> / <span>00:00:03:659</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyNavButtonOfDigital</h5>
-<span class='badge badge-success'>08.18.2026 7:19:44 PM</span>
-<span class='badge badge-danger'>08.18.2026 7:19:48 PM</span>
-<span class='badge badge-default'>00:00:03:659</span>
+<span class='badge badge-success'>08.18.2026 7:58:31 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:35 PM</span>
+<span class='badge badge-default'>00:00:03:669</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -281,9 +253,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:19:48 PM</td>
+        <td>7:58:35 PM</td>
         <td>
-          verifyNavButtonOfDigital
+          seeAllSeeLessSwitchTest
         </td>
       </tr>
   </tbody>
@@ -296,9 +268,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyPresenceOfItemBox</p>
+            <p class="name">verifyAllSectionHeaders</p>
             <p class="text-sm">
-              <span>7:19:52 PM</span> / <span>00:00:03:365</span>
+              <span>7:58:37 PM</span> / <span>00:00:03:592</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -306,10 +278,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyPresenceOfItemBox</h5>
-<span class='badge badge-success'>08.18.2026 7:19:52 PM</span>
-<span class='badge badge-danger'>08.18.2026 7:19:55 PM</span>
-<span class='badge badge-default'>00:00:03:365</span>
+<h5 class="test-status text-pass">verifyAllSectionHeaders</h5>
+<span class='badge badge-success'>08.18.2026 7:58:37 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:41 PM</span>
+<span class='badge badge-default'>00:00:03:592</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -321,7 +293,87 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:19:55 PM</td>
+        <td>7:58:41 PM</td>
+        <td>
+          verifyAllSectionHeaders
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyNavButtonOfDigital</p>
+            <p class="text-sm">
+              <span>7:58:44 PM</span> / <span>00:00:02:784</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyNavButtonOfDigital</h5>
+<span class='badge badge-success'>08.18.2026 7:58:44 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:47 PM</span>
+<span class='badge badge-default'>00:00:02:784</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:58:47 PM</td>
+        <td>
+          verifyNavButtonOfDigital
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPresenceOfItemBox</p>
+            <p class="text-sm">
+              <span>7:58:50 PM</span> / <span>00:00:04:346</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPresenceOfItemBox</h5>
+<span class='badge badge-success'>08.18.2026 7:58:50 PM</span>
+<span class='badge badge-danger'>08.18.2026 7:58:54 PM</span>
+<span class='badge badge-default'>00:00:04:346</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:58:54 PM</td>
         <td>
           verifyPresenceOfItemBox
         </td>
@@ -372,9 +424,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:19:29 PM</td>
+<td>19:58:24 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>checkDimensionOfAllSection</a>
+<a href="#" class="linked" test-id='3' id='3'>checkDimensionOfAllSection</a>
 </td>
 </tr>
 </tbody>
@@ -394,19 +446,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 18, 2026 07:19:25 PM</h3>
+<h3>Aug 18, 2026 07:58:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 18, 2026 07:19:55 PM</h3>
+<h3>Aug 18, 2026 07:58:54 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>6</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -428,12 +480,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'>
-<b>4</b> tests passed
+<div><small data-tooltip='85%'>
+<b>6</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='20%'><b>1</b> tests failed,
+<small data-tooltip='14%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -470,7 +522,7 @@
 </div></div>
 <script>
 var timeline = {
-"checkDimensionOfAllSection":1.357,"seeAllSeeLessSwitchTest":1.217,"verifyAllSectionHeaders":1.338,"verifyNavButtonOfDigital":3.659,"verifyPresenceOfItemBox":3.365
+"checkDimensionOfAllSection":0,"checkDimensionOfAllSection":0,"checkDimensionOfAllSection":3.566,"seeAllSeeLessSwitchTest":3.669,"verifyAllSectionHeaders":3.592,"verifyNavButtonOfDigital":2.784,"verifyPresenceOfItemBox":4.346
 };
 </script>
 <div class="row">
@@ -493,7 +545,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
+passParent: 6,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,

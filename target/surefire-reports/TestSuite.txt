@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.97 s <<< FAILURE! -- in TestSuite
-allSection.AllSectionHeaderTest.checkDimensionOfAllSection -- Time elapsed: 1.365 s <<< FAILURE!
-java.lang.AssertionError: expected [900] but found [621]
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 44.30 s <<< FAILURE! -- in TestSuite
+allSection.AllSectionHeaderTest.checkDimensionOfAllSection -- Time elapsed: 3.572 s <<< FAILURE!
+java.lang.AssertionError: expected [900] but found [609]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -16,8 +16,8 @@ java.lang.AssertionError: expected [900] but found [621]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)

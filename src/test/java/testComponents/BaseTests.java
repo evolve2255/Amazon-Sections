@@ -12,12 +12,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import allPageFactory.LandingPage;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTests {
 	public WebDriver driver;
@@ -30,17 +33,27 @@ public class BaseTests {
 		FileInputStream fis =new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\browser.properties");
 		prop.load(fis);
 		
-		String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser")!=null?System.getProperty("browser"): prop.getProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome")) {
 			
 			driver = new ChromeDriver();
 		}
-		if(browserName.equalsIgnoreCase("firefox")) {
-			
-			driver= new FirefoxDriver();
+		if(browserName.contains("firefox")) {
+			FirefoxOptions options = new FirefoxOptions();
+			WebDriverManager.firefoxdriver().setup();
+			if(browserName.contains("headless")) {
+			options.addArguments("-headless");
+			}
+			driver= new FirefoxDriver(options);
 		}
 		if(browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			EdgeOptions options = new EdgeOptions();
+			WebDriverManager.edgedriver().setup();
+			if(browserName.contains("headless")) {
+				
+				options.addArguments("-headless");
+			}
+			driver = new EdgeDriver(options);
 					
 		}
 		 wait = new WebDriverWait(driver, Duration.ofSeconds(10));

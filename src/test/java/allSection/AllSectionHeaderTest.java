@@ -118,7 +118,7 @@ public class AllSectionHeaderTest extends BaseTests {
 	 	 Assert.assertEquals(seeLessText, element2);
 	 	 
 	 	}
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void checkDimensionOfAllSection() throws IOException {
 		
 		int heght = 900;

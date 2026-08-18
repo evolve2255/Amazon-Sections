@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,  2 skipped,  4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,6 +107,25 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Sample -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Sample" class="hide-methods skipped suite-Sample"> (hide)</a> <!-- hide-methods skipped suite-Sample -->
+                      <a href="#" panel-name="suite-Sample" class="show-methods skipped suite-Sample"> (show)</a> <!-- show-methods skipped suite-Sample -->
+                    </span>
+                    <div class="method-list-content skipped suite-Sample">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample" title="allSection.AllSectionHeaderTest" class="method navigator-link" hash-for-method="checkDimensionOfAllSection">checkDimensionOfAllSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample" title="allSection.AllSectionHeaderTest" class="method navigator-link" hash-for-method="checkDimensionOfAllSection">checkDimensionOfAllSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Sample -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -158,7 +177,7 @@
                   <a name="checkDimensionOfAllSection">
                   </a> <!-- checkDimensionOfAllSection -->
                   <span class="method-name">checkDimensionOfAllSection</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [900] but found [621]
+                  <div class="stack-trace">java.lang.AssertionError: expected [900] but found [609]
 	at allSection.AllSectionHeaderTest.checkDimensionOfAllSection(AllSectionHeaderTest.java:143)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ... Removed 36 stack frames
@@ -167,6 +186,38 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Sample-class-failed -->
+          <div class="suite-Sample-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">allSection.AllSectionHeaderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDimensionOfAllSection">
+                  </a> <!-- checkDimensionOfAllSection -->
+                  <span class="method-name">checkDimensionOfAllSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [900] but found [609]
+	at allSection.AllSectionHeaderTest.checkDimensionOfAllSection(AllSectionHeaderTest.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDimensionOfAllSection">
+                  </a> <!-- checkDimensionOfAllSection -->
+                  <span class="method-name">checkDimensionOfAllSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [900] but found [609]
+	at allSection.AllSectionHeaderTest.checkDimensionOfAllSection(AllSectionHeaderTest.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sample-class-skipped -->
           <div class="suite-Sample-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -274,32 +325,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyNavButtonOfDigital')
-data.setCell(0, 2, 'allSection.AllSectionHeaderTest')
-data.setCell(0, 3, 3659);
+data.setCell(0, 1, 'verifyPresenceOfItemBox')
+data.setCell(0, 2, 'allSection.TodaysDeals')
+data.setCell(0, 3, 4345);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPresenceOfItemBox')
-data.setCell(1, 2, 'allSection.TodaysDeals')
-data.setCell(1, 3, 3356);
+data.setCell(1, 1, 'seeAllSeeLessSwitchTest')
+data.setCell(1, 2, 'allSection.AllSectionHeaderTest')
+data.setCell(1, 3, 3669);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyAllSectionHeaders')
 data.setCell(2, 2, 'allSection.AllSectionHeaderTest')
-data.setCell(2, 3, 1340);
+data.setCell(2, 3, 3592);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'seeAllSeeLessSwitchTest')
+data.setCell(3, 1, 'checkDimensionOfAllSection')
 data.setCell(3, 2, 'allSection.AllSectionHeaderTest')
-data.setCell(3, 3, 1219);
+data.setCell(3, 3, 2946);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'checkDimensionOfAllSection')
 data.setCell(4, 2, 'allSection.AllSectionHeaderTest')
-data.setCell(4, 3, 997);
+data.setCell(4, 3, 2937);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkDimensionOfAllSection')
+data.setCell(5, 2, 'allSection.AllSectionHeaderTest')
+data.setCell(5, 3, 2936);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyNavButtonOfDigital')
+data.setCell(6, 2, 'allSection.AllSectionHeaderTest')
+data.setCell(6, 3, 2784);
 window.suiteTableData['Sample']= { tableData: data, tableDiv: 'times-div-Sample'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Sample">
               </div> <!-- times-div-Sample -->
             </div> <!-- times-div -->
@@ -331,65 +390,89 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">checkDimensionOfAllSection</span>
+                <span class="method-start">2231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">5177 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">5518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkDimensionOfAllSection</span>
+                <span class="method-start">7237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">10174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">10707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkDimensionOfAllSection</span>
-                <span class="method-start">3880 ms</span>
+                <span class="method-start">13313 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">5255 ms</span>
+                <span class="method-start">16882 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">5626 ms</span>
+                <span class="method-start">17482 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">seeAllSeeLessSwitchTest</span>
-                <span class="method-start">8930 ms</span>
+                <span class="method-start">20197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">10150 ms</span>
+                <span class="method-start">23867 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">10503 ms</span>
+                <span class="method-start">24337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllSectionHeaders</span>
-                <span class="method-start">14876 ms</span>
+                <span class="method-start">26403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">16217 ms</span>
+                <span class="method-start">29998 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">16751 ms</span>
+                <span class="method-start">30639 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNavButtonOfDigital</span>
-                <span class="method-start">19189 ms</span>
+                <span class="method-start">33050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">22857 ms</span>
+                <span class="method-start">35836 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">allSection.TodaysDeals</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">23731 ms</span>
+                <span class="method-start">36751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPresenceOfItemBox</span>
-                <span class="method-start">26699 ms</span>
+                <span class="method-start">38833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">30064 ms</span>
+                <span class="method-start">43179 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
