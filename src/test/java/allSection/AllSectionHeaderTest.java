@@ -121,7 +121,7 @@ public class AllSectionHeaderTest extends BaseTests {
 	@Test(retryAnalyzer = Retry.class)
 	public void checkDimensionOfAllSection() throws IOException {
 		
-		int heght = 900;
+		int heght = 683;
 		int width = 365;
 //		driver = initializeBrowser();
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
